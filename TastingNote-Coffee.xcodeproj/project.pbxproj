@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C7CD3A5F162D4EEC52D2DFF /* Pods_TastingNote_CoffeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C474FD1754DAE01DAFF0A0 /* Pods_TastingNote_CoffeeTests.framework */; };
 		60DC1C3F1F697ADA008E54AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C3E1F697ADA008E54AA /* AppDelegate.swift */; };
-		60DC1C411F697ADA008E54AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C401F697ADA008E54AA /* ViewController.swift */; };
-		60DC1C441F697ADA008E54AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DC1C421F697ADA008E54AA /* Main.storyboard */; };
 		60DC1C461F697ADA008E54AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DC1C451F697ADA008E54AA /* Assets.xcassets */; };
 		60DC1C491F697ADA008E54AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DC1C471F697ADA008E54AA /* LaunchScreen.storyboard */; };
 		60DC1C541F697ADB008E54AA /* TastingNote_CoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C531F697ADB008E54AA /* TastingNote_CoffeeTests.swift */; };
 		60DC1C5F1F697ADB008E54AA /* TastingNote_CoffeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C5E1F697ADB008E54AA /* TastingNote_CoffeeUITests.swift */; };
+		60DC1C6F1F697EE7008E54AA /* CountUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C6E1F697EE7008E54AA /* CountUpViewController.swift */; };
+		60DC1C711F697EF5008E54AA /* CountUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C701F697EF5008E54AA /* CountUpViewModel.swift */; };
+		60DC1C731F697F06008E54AA /* CountUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DC1C721F697F06008E54AA /* CountUp.storyboard */; };
+		60DC1C751F698102008E54AA /* CountUpViewModelIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C741F698102008E54AA /* CountUpViewModelIO.swift */; };
+		60DC1C791F69824E008E54AA /* RxProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C781F69824E008E54AA /* RxProperty.swift */; };
+		60DC1C7E1F69868A008E54AA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C7D1F69868A008E54AA /* R.generated.swift */; };
+		60DC1C811F6986D7008E54AA /* CountUpViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC1C801F6986D7008E54AA /* CountUpViewModelTest.swift */; };
+		9AD588BCC6402B8580F39785 /* Pods_TastingNote_CoffeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5871134933601746F664D8 /* Pods_TastingNote_CoffeeUITests.framework */; };
+		A4AC41A5C663A2E6676924AD /* Pods_TastingNote_Coffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A3BD1BE3B5CAE1A56F3BC /* Pods_TastingNote_Coffee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F359D9A297CC0D935501323 /* Pods-TastingNote-CoffeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TastingNote-CoffeeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TastingNote-CoffeeTests/Pods-TastingNote-CoffeeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		60DC1C3B1F697ADA008E54AA /* TastingNote-Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TastingNote-Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DC1C3E1F697ADA008E54AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60DC1C401F697ADA008E54AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		60DC1C431F697ADA008E54AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60DC1C451F697ADA008E54AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60DC1C481F697ADA008E54AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60DC1C4A1F697ADA008E54AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +54,21 @@
 		60DC1C5A1F697ADB008E54AA /* TastingNote-CoffeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TastingNote-CoffeeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DC1C5E1F697ADB008E54AA /* TastingNote_CoffeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastingNote_CoffeeUITests.swift; sourceTree = "<group>"; };
 		60DC1C601F697ADB008E54AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60DC1C6E1F697EE7008E54AA /* CountUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountUpViewController.swift; sourceTree = "<group>"; };
+		60DC1C701F697EF5008E54AA /* CountUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountUpViewModel.swift; sourceTree = "<group>"; };
+		60DC1C721F697F06008E54AA /* CountUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CountUp.storyboard; sourceTree = "<group>"; };
+		60DC1C741F698102008E54AA /* CountUpViewModelIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountUpViewModelIO.swift; sourceTree = "<group>"; };
+		60DC1C781F69824E008E54AA /* RxProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxProperty.swift; sourceTree = "<group>"; };
+		60DC1C7D1F69868A008E54AA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		60DC1C801F6986D7008E54AA /* CountUpViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountUpViewModelTest.swift; sourceTree = "<group>"; };
+		6C08041CD2674A56E18E1EBE /* Pods-TastingNote-Coffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TastingNote-Coffee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TastingNote-Coffee/Pods-TastingNote-Coffee.debug.xcconfig"; sourceTree = "<group>"; };
+		6E5871134933601746F664D8 /* Pods_TastingNote_CoffeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TastingNote_CoffeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C474FD1754DAE01DAFF0A0 /* Pods_TastingNote_CoffeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TastingNote_CoffeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A9C6915362BCC38816A57CD /* Pods-TastingNote-CoffeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TastingNote-CoffeeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TastingNote-CoffeeUITests/Pods-TastingNote-CoffeeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9DFCCBF5AA691B516784637D /* Pods-TastingNote-Coffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TastingNote-Coffee.release.xcconfig"; path = "Pods/Target Support Files/Pods-TastingNote-Coffee/Pods-TastingNote-Coffee.release.xcconfig"; sourceTree = "<group>"; };
+		C60AE6F85648CF0B46B53CFD /* Pods-TastingNote-CoffeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TastingNote-CoffeeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TastingNote-CoffeeUITests/Pods-TastingNote-CoffeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1E71505F25CA10DB0B5649D /* Pods-TastingNote-CoffeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TastingNote-CoffeeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TastingNote-CoffeeTests/Pods-TastingNote-CoffeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F15A3BD1BE3B5CAE1A56F3BC /* Pods_TastingNote_Coffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TastingNote_Coffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AC41A5C663A2E6676924AD /* Pods_TastingNote_Coffee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7CD3A5F162D4EEC52D2DFF /* Pods_TastingNote_CoffeeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +92,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD588BCC6402B8580F39785 /* Pods_TastingNote_CoffeeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA5881A8690D61AAB4F85DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C08041CD2674A56E18E1EBE /* Pods-TastingNote-Coffee.debug.xcconfig */,
+				9DFCCBF5AA691B516784637D /* Pods-TastingNote-Coffee.release.xcconfig */,
+				4F359D9A297CC0D935501323 /* Pods-TastingNote-CoffeeTests.debug.xcconfig */,
+				E1E71505F25CA10DB0B5649D /* Pods-TastingNote-CoffeeTests.release.xcconfig */,
+				C60AE6F85648CF0B46B53CFD /* Pods-TastingNote-CoffeeUITests.debug.xcconfig */,
+				8A9C6915362BCC38816A57CD /* Pods-TastingNote-CoffeeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		60DC1C321F697ADA008E54AA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				60DC1C521F697ADB008E54AA /* TastingNote-CoffeeTests */,
 				60DC1C5D1F697ADB008E54AA /* TastingNote-CoffeeUITests */,
 				60DC1C3C1F697ADA008E54AA /* Products */,
+				4FA5881A8690D61AAB4F85DF /* Pods */,
+				77FF9E9B8A2318096F2BC57F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +137,10 @@
 		60DC1C3D1F697ADA008E54AA /* TastingNote-Coffee */ = {
 			isa = PBXGroup;
 			children = (
-				60DC1C3E1F697ADA008E54AA /* AppDelegate.swift */,
-				60DC1C401F697ADA008E54AA /* ViewController.swift */,
-				60DC1C421F697ADA008E54AA /* Main.storyboard */,
-				60DC1C451F697ADA008E54AA /* Assets.xcassets */,
-				60DC1C471F697ADA008E54AA /* LaunchScreen.storyboard */,
-				60DC1C4A1F697ADA008E54AA /* Info.plist */,
+				60DC1C761F698235008E54AA /* Extensions */,
+				60DC1C7C1F698662008E54AA /* Application */,
+				60DC1C6C1F697EBF008E54AA /* CountUp */,
+				60DC1C7B1F69863D008E54AA /* Resources */,
 			);
 			path = "TastingNote-Coffee";
 			sourceTree = "<group>";
@@ -110,6 +148,7 @@
 		60DC1C521F697ADB008E54AA /* TastingNote-CoffeeTests */ = {
 			isa = PBXGroup;
 			children = (
+				60DC1C7F1F6986B5008E54AA /* CountUp */,
 				60DC1C531F697ADB008E54AA /* TastingNote_CoffeeTests.swift */,
 				60DC1C551F697ADB008E54AA /* Info.plist */,
 			);
@@ -125,6 +164,78 @@
 			path = "TastingNote-CoffeeUITests";
 			sourceTree = "<group>";
 		};
+		60DC1C6C1F697EBF008E54AA /* CountUp */ = {
+			isa = PBXGroup;
+			children = (
+				60DC1C6D1F697ED6008E54AA /* Models */,
+				60DC1C6E1F697EE7008E54AA /* CountUpViewController.swift */,
+				60DC1C721F697F06008E54AA /* CountUp.storyboard */,
+			);
+			name = CountUp;
+			sourceTree = "<group>";
+		};
+		60DC1C6D1F697ED6008E54AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60DC1C741F698102008E54AA /* CountUpViewModelIO.swift */,
+				60DC1C701F697EF5008E54AA /* CountUpViewModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		60DC1C761F698235008E54AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60DC1C771F698241008E54AA /* RxSwift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		60DC1C771F698241008E54AA /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				60DC1C781F69824E008E54AA /* RxProperty.swift */,
+			);
+			name = RxSwift;
+			sourceTree = "<group>";
+		};
+		60DC1C7B1F69863D008E54AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60DC1C7D1F69868A008E54AA /* R.generated.swift */,
+				60DC1C451F697ADA008E54AA /* Assets.xcassets */,
+				60DC1C471F697ADA008E54AA /* LaunchScreen.storyboard */,
+				60DC1C4A1F697ADA008E54AA /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		60DC1C7C1F698662008E54AA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				60DC1C3E1F697ADA008E54AA /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		60DC1C7F1F6986B5008E54AA /* CountUp */ = {
+			isa = PBXGroup;
+			children = (
+				60DC1C801F6986D7008E54AA /* CountUpViewModelTest.swift */,
+			);
+			name = CountUp;
+			sourceTree = "<group>";
+		};
+		77FF9E9B8A2318096F2BC57F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F15A3BD1BE3B5CAE1A56F3BC /* Pods_TastingNote_Coffee.framework */,
+				74C474FD1754DAE01DAFF0A0 /* Pods_TastingNote_CoffeeTests.framework */,
+				6E5871134933601746F664D8 /* Pods_TastingNote_CoffeeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +243,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60DC1C631F697ADB008E54AA /* Build configuration list for PBXNativeTarget "TastingNote-Coffee" */;
 			buildPhases = (
+				638D26F26988349276D625DD /* [CP] Check Pods Manifest.lock */,
+				60DC1C7A1F69860F008E54AA /* [R.swift] Create R file */,
 				60DC1C371F697ADA008E54AA /* Sources */,
 				60DC1C381F697ADA008E54AA /* Frameworks */,
 				60DC1C391F697ADA008E54AA /* Resources */,
+				DA12CF0DDDB25D4E1BB9BC01 /* [CP] Embed Pods Frameworks */,
+				98C85011C65CA24D44431B21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60DC1C661F697ADB008E54AA /* Build configuration list for PBXNativeTarget "TastingNote-CoffeeTests" */;
 			buildPhases = (
+				2B4C8B30A3CA1940E2C722C0 /* [CP] Check Pods Manifest.lock */,
 				60DC1C4B1F697ADB008E54AA /* Sources */,
 				60DC1C4C1F697ADB008E54AA /* Frameworks */,
 				60DC1C4D1F697ADB008E54AA /* Resources */,
+				CB45A3EC701C707F77637CAC /* [CP] Embed Pods Frameworks */,
+				459DB4DACA834B2A8035B126 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60DC1C691F697ADB008E54AA /* Build configuration list for PBXNativeTarget "TastingNote-CoffeeUITests" */;
 			buildPhases = (
+				B038AC1149BFDD8045ABF222 /* [CP] Check Pods Manifest.lock */,
 				60DC1C561F697ADB008E54AA /* Sources */,
 				60DC1C571F697ADB008E54AA /* Frameworks */,
 				60DC1C581F697ADB008E54AA /* Resources */,
+				030FFCC047A4C57A30743BFD /* [CP] Embed Pods Frameworks */,
+				6485B17398D6129F16DA9299 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,7 +358,7 @@
 			files = (
 				60DC1C491F697ADA008E54AA /* LaunchScreen.storyboard in Resources */,
 				60DC1C461F697ADA008E54AA /* Assets.xcassets in Resources */,
-				60DC1C441F697ADA008E54AA /* Main.storyboard in Resources */,
+				60DC1C731F697F06008E54AA /* CountUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +378,169 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		030FFCC047A4C57A30743BFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TastingNote-CoffeeUITests/Pods-TastingNote-CoffeeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B4C8B30A3CA1940E2C722C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		459DB4DACA834B2A8035B126 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TastingNote-CoffeeTests/Pods-TastingNote-CoffeeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60DC1C7A1F69860F008E54AA /* [R.swift] Create R file */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[R.swift] Create R file";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
+		638D26F26988349276D625DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6485B17398D6129F16DA9299 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TastingNote-CoffeeUITests/Pods-TastingNote-CoffeeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98C85011C65CA24D44431B21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TastingNote-Coffee/Pods-TastingNote-Coffee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B038AC1149BFDD8045ABF222 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB45A3EC701C707F77637CAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TastingNote-CoffeeTests/Pods-TastingNote-CoffeeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA12CF0DDDB25D4E1BB9BC01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TastingNote-Coffee/Pods-TastingNote-Coffee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60DC1C371F697ADA008E54AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DC1C411F697ADA008E54AA /* ViewController.swift in Sources */,
+				60DC1C791F69824E008E54AA /* RxProperty.swift in Sources */,
+				60DC1C6F1F697EE7008E54AA /* CountUpViewController.swift in Sources */,
 				60DC1C3F1F697ADA008E54AA /* AppDelegate.swift in Sources */,
+				60DC1C711F697EF5008E54AA /* CountUpViewModel.swift in Sources */,
+				60DC1C751F698102008E54AA /* CountUpViewModelIO.swift in Sources */,
+				60DC1C7E1F69868A008E54AA /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DC1C541F697ADB008E54AA /* TastingNote_CoffeeTests.swift in Sources */,
+				60DC1C811F6986D7008E54AA /* CountUpViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +577,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		60DC1C421F697ADA008E54AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60DC1C431F697ADA008E54AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		60DC1C471F697ADA008E54AA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,6 +685,7 @@
 		};
 		60DC1C641F697ADB008E54AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C08041CD2674A56E18E1EBE /* Pods-TastingNote-Coffee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
@@ -428,6 +699,7 @@
 		};
 		60DC1C651F697ADB008E54AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DFCCBF5AA691B516784637D /* Pods-TastingNote-Coffee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
@@ -441,6 +713,7 @@
 		};
 		60DC1C671F697ADB008E54AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F359D9A297CC0D935501323 /* Pods-TastingNote-CoffeeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +729,7 @@
 		};
 		60DC1C681F697ADB008E54AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E71505F25CA10DB0B5649D /* Pods-TastingNote-CoffeeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +745,7 @@
 		};
 		60DC1C6A1F697ADB008E54AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60AE6F85648CF0B46B53CFD /* Pods-TastingNote-CoffeeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
@@ -485,6 +760,7 @@
 		};
 		60DC1C6B1F697ADB008E54AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9C6915362BCC38816A57CD /* Pods-TastingNote-CoffeeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
@@ -516,6 +792,7 @@
 				60DC1C651F697ADB008E54AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60DC1C661F697ADB008E54AA /* Build configuration list for PBXNativeTarget "TastingNote-CoffeeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +801,7 @@
 				60DC1C681F697ADB008E54AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60DC1C691F697ADB008E54AA /* Build configuration list for PBXNativeTarget "TastingNote-CoffeeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +810,7 @@
 				60DC1C6B1F697ADB008E54AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

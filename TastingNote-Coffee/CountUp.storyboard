@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ygT-pq-wnB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Count Up View Controller-->
+        <scene sceneID="PGY-jl-hMh">
+            <objects>
+                <viewController id="ygT-pq-wnB" customClass="CountUpViewController" customModule="TastingNote_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ybp-K4-oEy"/>
+                        <viewControllerLayoutGuide type="bottom" id="BPn-3x-4Ac"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rux-oF-4ko">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNE-Gh-kHh">
+                                <rect key="frame" x="166" y="209" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omb-HO-a52">
+                                <rect key="frame" x="156" y="318" width="62" height="30"/>
+                                <state key="normal" title="CountUp"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpp-On-iOt">
+                                <rect key="frame" x="147" y="392" width="81" height="30"/>
+                                <state key="normal" title="CountDown"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxZ-re-vVk">
+                                <rect key="frame" x="168" y="466" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SNE-Gh-kHh" firstAttribute="centerX" secondItem="Rux-oF-4ko" secondAttribute="centerX" id="BtQ-mv-Uh0"/>
+                            <constraint firstItem="Omb-HO-a52" firstAttribute="centerY" secondItem="Rux-oF-4ko" secondAttribute="centerY" id="Evc-Cn-0kg"/>
+                            <constraint firstItem="Omb-HO-a52" firstAttribute="top" secondItem="SNE-Gh-kHh" secondAttribute="bottom" constant="88" id="Hca-xU-wpg"/>
+                            <constraint firstItem="SxZ-re-vVk" firstAttribute="top" secondItem="Gpp-On-iOt" secondAttribute="bottom" constant="44" id="OH1-Na-csL"/>
+                            <constraint firstItem="SxZ-re-vVk" firstAttribute="centerX" secondItem="Rux-oF-4ko" secondAttribute="centerX" id="QpG-7L-nhH"/>
+                            <constraint firstItem="Gpp-On-iOt" firstAttribute="centerX" secondItem="Rux-oF-4ko" secondAttribute="centerX" id="Yad-he-ZqT"/>
+                            <constraint firstItem="Omb-HO-a52" firstAttribute="centerX" secondItem="Rux-oF-4ko" secondAttribute="centerX" id="ZVe-eO-G9I"/>
+                            <constraint firstItem="Gpp-On-iOt" firstAttribute="top" secondItem="Omb-HO-a52" secondAttribute="bottom" constant="44" id="chO-bR-FrL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countDownBtn" destination="Gpp-On-iOt" id="gcu-CE-3we"/>
+                        <outlet property="countLabel" destination="SNE-Gh-kHh" id="wdQ-Lm-jqi"/>
+                        <outlet property="countUpBtn" destination="Omb-HO-a52" id="CjD-Hn-LO8"/>
+                        <outlet property="resetBtn" destination="SxZ-re-vVk" id="Sho-2D-zzD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3f2-Af-gOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="291"/>
+        </scene>
+    </scenes>
+</document>
