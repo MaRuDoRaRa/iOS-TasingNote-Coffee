@@ -1,0 +1,22 @@
+machine:
+xcode:
+version: 8.3.3
+environment:
+XCODE_SCHEME: SikmiBlog
+XCODE_WORKSPACE: ./TastingNote-Coffee.xcworkspace
+GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)"
+ 
+# 後述する fastlane を利用するために bundle install を行う
+ 
+dependencies:
+override:
+- cd SikmiBlog &amp;&amp; bundle install
+ 
+# develop ブランチにコードがPushされた時に fastlane(後述) の beta レーンを実行
+ 
+deployment:
+develop:
+branch: develop
+commands:
+- cd SikmiBlog &amp;&amp; bundle exec fastlane beta
+ 

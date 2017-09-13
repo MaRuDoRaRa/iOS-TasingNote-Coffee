@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TastingNote-CoffeeTests.xctest' tests='6' failures='0'>
+  <testsuite name='TastingNote_CoffeeUITests.TastingNote_CoffeeUITests' tests='1' failures='0'>
+    <testcase classname='TastingNote_CoffeeUITests.TastingNote_CoffeeUITests' name='testExample' time='6.791'/>
+  </testsuite>
+  <testsuite name='TastingNote_CoffeeTests.CountUpModelTests' tests='3' failures='0'>
+    <testcase classname='TastingNote_CoffeeTests.CountUpModelTests' name='カウンタの制御__カウントアップした時__カウントが１加算されていること' time='0.003'/>
+    <testcase classname='TastingNote_CoffeeTests.CountUpModelTests' name='カウンタの制御__カウントダウンした時__カウントが１減算されていること' time='0.001'/>
+    <testcase classname='TastingNote_CoffeeTests.CountUpModelTests' name='カウンタの制御__リセットした時__カウントが0になること' time='0.001'/>
+  </testsuite>
+  <testsuite name='TastingNote_CoffeeTests.TastingNote_CoffeeTests' tests='2' failures='0'>
+    <testcase classname='TastingNote_CoffeeTests.TastingNote_CoffeeTests' name='testExample' time='0.001'/>
+    <testcase classname='TastingNote_CoffeeTests.TastingNote_CoffeeTests' name='testPerformanceExample' time='0.395'/>
+  </testsuite>
+</testsuites>
