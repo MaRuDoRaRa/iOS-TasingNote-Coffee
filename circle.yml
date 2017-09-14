@@ -9,13 +9,15 @@ machine:
 dependencies:
   cache_directories:
     - "/Users/distiller/.cocoapods/"
-  override:
-    - pod install
-    - bundle install
+  pre:
+    - sudo gem update --system
+    - sudo gem install bundler
  
+test:
+  override:
+    - bundle exec fastlane test
 deployment:
   develop:
     branch: master
     commands:
       - bundle exec fastlane beta
-

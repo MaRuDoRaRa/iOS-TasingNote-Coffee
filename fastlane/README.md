@@ -39,7 +39,7 @@ fastlane ios test
 ```
 fastlane ios beta
 ```
-アルファ版をFabricCrashlyticsにデプロイ
+FabricCrashlyticsにデプロイ
 ### ios release
 ```
 fastlane ios release

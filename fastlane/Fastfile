@@ -18,35 +18,51 @@ default_platform :ios
 
 platform :ios do
   before_all do
-    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
-    ENV["CRASHLYTICS_API_TOKEN"] = "6cb0cc9d48b1339629f655b453be597013aa0899"
-    ENV["CRASHLYTICS_BUILD_SECRET"] = "90385b5b011ee156cdf8ab4852a4a84b86a811f5d4c91dc09b8b00b745607a07"
+    # ビルド番号更新
+    set_info_plist_value(
+      path: "./TastingNote-Coffee/Info.plist",
+      key: "CFBundleVersion",
+      value: ENV["CIRCLE_BUILD_NUM"]
+    )
   end
 
   desc "テスト実行"
   lane :test do
+    cocoapods
     scan
   end
 
-  desc “アルファ版をFabricCrashlyticsにデプロイ"
+  desc “FabricCrashlyticsにデプロイ"
   lane :beta do
-    match
-    gym(scheme: 'TastingNote-Coffee', export_method: 'development')
-
-    # crashlytics にipaをアップロードする処理を追加
-    crashlytics(api_token: ENV["CRASHLYTICS_API_TOKEN"],
-         build_secret: ENV["CRASHLYTICS_BUILD_SECRET"],
-               emails: ["junic.maruyama@gmail.com"],
-               groups: ["developers"],
-                notes: "Distributed with fastlane",
-        notifications: true)
+    # 証明書取得
+    match(
+      type: "development"
+    )
+    # ビルド
+    gym(
+      scheme: "TastingNote-Coffee",
+      export_method: "development"
+    )
+    # Betaに送信
+    crashlytics(
+      notes: "Distributed with fastlane", 
+      notifications: true
+    )
   end
 
   desc “ベータ版をTestFlightにデプロイ"
   lane :release do
-    gym # Build your app - more options available
+    # 証明書取得
+    match(
+    　　type: "appstore"
+    )
+    # ビルド
+    gym(
+      scheme: "TastingNote-Coffee",
+      export_method: "app-store"
+    )
+    # TestFlightに送信
     pilot
-    # deliver(force: true)
   end
 
   after_all do |lane|
