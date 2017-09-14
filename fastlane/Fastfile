@@ -30,6 +30,7 @@ platform :ios do
 
   desc “アルファ版をFabricCrashlyticsにデプロイ"
   lane :beta do
+    match
     gym(scheme: 'TastingNote-Coffee', export_method: 'development')
 
     # crashlytics にipaをアップロードする処理を追加

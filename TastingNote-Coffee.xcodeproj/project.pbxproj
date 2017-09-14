@@ -603,103 +603,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		601EB26E1F6A8F2800932AE1 /* Adhoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Adhoc;
-		};
-		601EB26F1F6A8F2800932AE1 /* Adhoc */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DFCCBF5AA691B516784637D /* Pods-TastingNote-Coffee.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "TastingNote-Coffee/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.junic.tasting-note.coffee";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1904e309-60a1-4515-9f6c-666fae4278e1";
-				PROVISIONING_PROFILE_SPECIFIER = "jp.junic.tasting-note.coffee AdHoc";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Adhoc;
-		};
-		601EB2701F6A8F2800932AE1 /* Adhoc */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1E71505F25CA10DB0B5649D /* Pods-TastingNote-CoffeeTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
-				INFOPLIST_FILE = "TastingNote-CoffeeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.junichi.TastingNote-CoffeeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TastingNote-Coffee.app/TastingNote-Coffee";
-			};
-			name = Adhoc;
-		};
-		601EB2711F6A8F2800932AE1 /* Adhoc */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A9C6915362BCC38816A57CD /* Pods-TastingNote-CoffeeUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
-				INFOPLIST_FILE = "TastingNote-CoffeeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.junichi.TastingNote-CoffeeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "TastingNote-Coffee";
-			};
-			name = Adhoc;
-		};
 		60DC1C611F697ADB008E54AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -811,8 +714,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.junic.tasting-note.coffee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bb6d1d0b-9158-4bc9-8e56-6a94688884cd";
-				PROVISIONING_PROFILE_SPECIFIER = "jp.junic.tasting-note.coffee Development";
+				PROVISIONING_PROFILE = "04809976-c96a-4b88-a5e6-17726c11d5f7";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development jp.junic.tasting-note.coffee";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -833,8 +736,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.junic.tasting-note.coffee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3a0f1f26-53b5-41ed-bd0c-ac17f39c96c8";
-				PROVISIONING_PROFILE_SPECIFIER = CoffeeTastingNote;
+				PROVISIONING_PROFILE = "202889ac-34da-40fd-985d-a86e180b89a4";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore jp.junic.tasting-note.coffee";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -909,7 +812,6 @@
 			buildConfigurations = (
 				60DC1C611F697ADB008E54AA /* Debug */,
 				60DC1C621F697ADB008E54AA /* Release */,
-				601EB26E1F6A8F2800932AE1 /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -919,7 +821,6 @@
 			buildConfigurations = (
 				60DC1C641F697ADB008E54AA /* Debug */,
 				60DC1C651F697ADB008E54AA /* Release */,
-				601EB26F1F6A8F2800932AE1 /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -929,7 +830,6 @@
 			buildConfigurations = (
 				60DC1C671F697ADB008E54AA /* Debug */,
 				60DC1C681F697ADB008E54AA /* Release */,
-				601EB2701F6A8F2800932AE1 /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -939,7 +839,6 @@
 			buildConfigurations = (
 				60DC1C6A1F697ADB008E54AA /* Debug */,
 				60DC1C6B1F697ADB008E54AA /* Release */,
-				601EB2711F6A8F2800932AE1 /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,7 @@
+git_url "git@github.com:miraitechno/ios-certificates.git"
+
+type "development" # The default type, can be: appstore, adhoc, enterprise or development
+
+app_identifier ["jp.junic.tasting-note.coffee"]
+username "junic.maruyama@gmail.com"
+git_branch "tasting-note.coffee"
