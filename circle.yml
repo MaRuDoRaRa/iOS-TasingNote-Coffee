@@ -8,7 +8,7 @@ machine:
  
 dependencies:
   cache_directories:
-    - CocoaPods
+    - "/Users/distiller/.cocoapods/"
   override:
     - pod install
     - bundle install

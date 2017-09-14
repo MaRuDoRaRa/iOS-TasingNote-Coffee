@@ -321,13 +321,13 @@
 					60DC1C4E1F697ADB008E54AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6K4ZBWEM7M;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 60DC1C3A1F697ADA008E54AA;
 					};
 					60DC1C591F697ADB008E54AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6K4ZBWEM7M;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 60DC1C3A1F697ADA008E54AA;
 					};
 				};

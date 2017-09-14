@@ -30,8 +30,6 @@ platform :ios do
 
   desc “アルファ版をFabricCrashlyticsにデプロイ"
   lane :beta do
-    disable_automatic_code_signing
-    enable_automatic_code_signing
     gym(scheme: 'TastingNote-Coffee', export_method: 'development')
 
     # crashlytics にipaをアップロードする処理を追加
