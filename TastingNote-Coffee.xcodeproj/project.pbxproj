@@ -316,18 +316,18 @@
 					60DC1C3A1F697ADA008E54AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6K4ZBWEM7M;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					60DC1C4E1F697ADB008E54AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6K4ZBWEM7M;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 60DC1C3A1F697ADA008E54AA;
 					};
 					60DC1C591F697ADB008E54AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6K4ZBWEM7M;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 60DC1C3A1F697ADA008E54AA;
 					};
 				};
@@ -712,9 +712,10 @@
 				);
 				INFOPLIST_FILE = "TastingNote-Coffee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.junichi.TastingNote-Coffee";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.junic.tasting-note.coffee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "7c9b7ab2-cc25-48aa-ba38-1757c37e8016";
+				PROVISIONING_PROFILE_SPECIFIER = "*";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -725,7 +726,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -733,9 +734,10 @@
 				);
 				INFOPLIST_FILE = "TastingNote-Coffee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.junichi.TastingNote-Coffee";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.junic.tasting-note.coffee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "3a0f1f26-53b5-41ed-bd0c-ac17f39c96c8";
+				PROVISIONING_PROFILE_SPECIFIER = CoffeeTastingNote;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
