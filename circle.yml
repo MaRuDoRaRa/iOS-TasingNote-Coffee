@@ -6,18 +6,14 @@ machine:
     XCODE_WORKSPACE: ./TastingNote-Coffee.xcworkspace
     GYM_CODE_SIGNING_IDENTITY: 'iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)'
  
-# 後述する fastlane を利用するために bundle install を行う
- 
 dependencies:
   override:
-    - cd TastingNote-Coffee &amp;&amp; pod install
-    - cd TastingNote-Coffee &amp;&amp; bundle install
- 
-# develop ブランチにコードがPushされた時に fastlane(後述) の beta レーンを実行
+    - pod install
+    - bundle install
  
 deployment:
   develop:
     branch: master
     commands:
-      - cd TastingNote-Coffee &amp;&amp; bundle exec fastlane beta
+      - bundle exec fastlane beta
 
