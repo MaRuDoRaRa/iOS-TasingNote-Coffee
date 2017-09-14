@@ -7,6 +7,8 @@ machine:
     GYM_CODE_SIGNING_IDENTITY: 'iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)'
  
 dependencies:
+  cache_directories:
+    - CocoaPods
   override:
     - pod install
     - bundle install
