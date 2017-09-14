@@ -29,7 +29,7 @@ platform :ios do
   desc "テスト実行"
   lane :test do
     cocoapods
-    scan
+    scan(scheme: "TastingNote-Coffee")
   end
 
   desc “FabricCrashlyticsにデプロイ"
