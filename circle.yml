@@ -2,7 +2,7 @@ machine:
 xcode:
 version: 8.3.3
 environment:
-XCODE_SCHEME: SikmiBlog
+XCODE_SCHEME: TastingNote-Coffee
 XCODE_WORKSPACE: ./TastingNote-Coffee.xcworkspace
 GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)"
  
@@ -10,7 +10,7 @@ GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)"
  
 dependencies:
 override:
-- cd SikmiBlog &amp;&amp; bundle install
+- cd TastingNote-Coffee &amp;&amp; bundle install
  
 # develop ブランチにコードがPushされた時に fastlane(後述) の beta レーンを実行
  
@@ -18,5 +18,5 @@ deployment:
 develop:
 branch: develop
 commands:
-- cd SikmiBlog &amp;&amp; bundle exec fastlane beta
+- cd TastingNote-Coffee &amp;&amp; bundle exec fastlane beta
  
