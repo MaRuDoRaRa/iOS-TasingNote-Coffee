@@ -250,6 +250,7 @@
 				60DC1C391F697ADA008E54AA /* Resources */,
 				DA12CF0DDDB25D4E1BB9BC01 /* [CP] Embed Pods Frameworks */,
 				98C85011C65CA24D44431B21 /* [CP] Copy Pods Resources */,
+				600A11701F6A1F0E0095F11D /* [Fabric] Deploy */,
 			);
 			buildRules = (
 			);
@@ -423,6 +424,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TastingNote-CoffeeTests/Pods-TastingNote-CoffeeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		600A11701F6A1F0E0095F11D /* [Fabric] Deploy */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Fabric] Deploy";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/Fabric/run 6cb0cc9d48b1339629f655b453be597013aa0899 90385b5b011ee156cdf8ab4852a4a84b86a811f5d4c91dc09b8b00b745607a07";
 		};
 		60DC1C7A1F69860F008E54AA /* [R.swift] Create R file */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -688,8 +703,13 @@
 			baseConfigurationReference = 6C08041CD2674A56E18E1EBE /* Pods-TastingNote-Coffee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: MARUYAMA JUNICHI (GX2WLT8NK9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "TastingNote-Coffee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.junichi.TastingNote-Coffee";
@@ -704,8 +724,13 @@
 			baseConfigurationReference = 9DFCCBF5AA691B516784637D /* Pods-TastingNote-Coffee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "TastingNote-Coffee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.junichi.TastingNote-Coffee";

@@ -15,21 +15,30 @@ fastlane_version "2.55.0"
 
 default_platform :ios
 
+
 platform :ios do
   before_all do
     ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
-    cocoapods
-    
+    ENV["CRASHLYTICS_API_TOKEN"] = "6cb0cc9d48b1339629f655b453be597013aa0899"
+    ENV["CRASHLYTICS_BUILD_SECRET"] = "90385b5b011ee156cdf8ab4852a4a84b86a811f5d4c91dc09b8b00b745607a07"
   end
 
-  desc "Runs all the tests"
+  desc "テスト実行"
   lane :test do
     scan
   end
 
-  desc “アルファ版をFabric/Crashlyticsにデプロイ"
+  desc “アルファ版をFabricCrashlyticsにデプロイ"
   lane :beta do
-    gym # Build your app - more options available
+    gym(scheme: 'TastingNote-Coffee', export_method: 'development')
+
+    # crashlytics にipaをアップロードする処理を追加
+    crashlytics(api_token: ENV["CRASHLYTICS_API_TOKEN"],
+         build_secret: ENV["CRASHLYTICS_BUILD_SECRET"],
+               emails: ["junic.maruyama@gmail.com"],
+               groups: ["developers"],
+                notes: "Distributed with fastlane",
+        notifications: true)
   end
 
   desc “ベータ版をTestFlightにデプロイ"
@@ -52,10 +61,3 @@ platform :ios do
     )
   end
 end
-
-
-# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
-# All available actions: https://docs.fastlane.tools/actions
-
-# fastlane reports which actions are used. No personal data is recorded. 
-# Learn more at https://github.com/fastlane/fastlane#metrics

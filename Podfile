@@ -13,6 +13,8 @@ target 'TastingNote-Coffee' do
   pod 'APIKit'
   pod 'Himotoki'
   pod 'Action'
+  pod ‘Fabric’
+  pod ‘Crashlytics’
 
   def testing_pods
     pod 'Quick'

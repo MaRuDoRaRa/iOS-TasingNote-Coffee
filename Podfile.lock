@@ -4,6 +4,9 @@ PODS:
     - RxSwift (~> 3.4)
   - APIKit (3.1.1):
     - Result (~> 3.0)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
   - Himotoki (3.0.1)
   - Nimble (7.0.1)
   - Nuke (5.1.1)
@@ -20,6 +23,8 @@ PODS:
 DEPENDENCIES:
   - Action
   - APIKit
+  - Crashlytics
+  - Fabric
   - Himotoki
   - Nimble
   - Nuke
@@ -31,6 +36,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Action: e224bd151fe2e057f4189b4a9df0dc5d21264a9e
   APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   Himotoki: 85fda41d4d0e14f7228317a3b474175cdfb8f515
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   Nuke: 0a2ddb4bd13d75782964bf598a159ca2a836d826
@@ -42,6 +49,6 @@ SPEC CHECKSUMS:
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
   SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
 
-PODFILE CHECKSUM: 62b53bc07c8afa1ab6ceb6c395fb23af7779f482
+PODFILE CHECKSUM: f6ecb9ff7bba67f70d518d5ecbd9a07f2e148369
 
 COCOAPODS: 1.2.1

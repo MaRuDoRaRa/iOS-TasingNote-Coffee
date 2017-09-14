@@ -34,12 +34,12 @@ xcode-select --install
 ```
 fastlane ios test
 ```
-Runs all the tests
+テスト実行
 ### ios beta
 ```
 fastlane ios beta
 ```
-アルファ版をFabric/Crashlyticsにデプロイ
+アルファ版をFabricCrashlyticsにデプロイ
 ### ios release
 ```
 fastlane ios release
