@@ -6,19 +6,13 @@ machine:
     XCODE_WORKSPACE: ./TastingNote-Coffee.xcworkspace
     GYM_CODE_SIGNING_IDENTITY: 'iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)'
  
-#dependencies:
-#  cache_directories:
-#    - "/Users/distiller/.cocoapods/"
-#  pre:
-#    - sudo gem update --system
-#    - sudo gem install bundler
+dependencies:
+  pre:
+    - pod install
+    - bundle install
  
-#test:
-#  override:
-#    - bundle exec fastlane test
 deployment:
   develop:
     branch: master
     commands:
-#      - bundle exec fastlane beta
-      - git clone 'git@github.com:miraitechno/ios-certificates.git'
+      - bundle exec fastlane beta

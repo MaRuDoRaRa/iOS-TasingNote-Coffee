@@ -26,12 +26,6 @@ platform :ios do
     )
   end
 
-  desc "テスト実行"
-  lane :test do
-    cocoapods
-    scan(scheme: "TastingNote-Coffee")
-  end
-
   desc “FabricCrashlyticsにデプロイ"
   lane :beta do
     # 証明書取得
