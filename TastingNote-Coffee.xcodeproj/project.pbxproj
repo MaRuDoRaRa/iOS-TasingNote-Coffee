@@ -726,7 +726,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6K4ZBWEM7M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -736,8 +736,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.junic.tasting-note.coffee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "202889ac-34da-40fd-985d-a86e180b89a4";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore jp.junic.tasting-note.coffee";
+				PROVISIONING_PROFILE = "290fb701-6aa9-4e1a-98cd-4aa38a61e440";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development jp.junic.tasting-note.coffee";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
