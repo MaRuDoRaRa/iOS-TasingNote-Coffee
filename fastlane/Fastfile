@@ -35,6 +35,7 @@ platform :ios do
     # ビルド
     gym(
       scheme: "TastingNote-Coffee",
+      codesigning_identity: "iPhone Developer: MARUYAMA JUNICHI (GX2WLT8NK9)",
       export_method: "development"
     )
     # Betaに送信

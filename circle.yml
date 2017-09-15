@@ -1,16 +1,16 @@
-machine:
+ machine:
+  timezone: Asia/Tokyo
   xcode:
     version: 8.3.3
-  environment:
-    XCODE_SCHEME: TastingNote-Coffee
-    XCODE_WORKSPACE: ./TastingNote-Coffee.xcworkspace
-    GYM_CODE_SIGNING_IDENTITY: 'iPhone Distribution: MARUYAMA JUNICHI (6K4ZBWEM7M)'
- 
+
 dependencies:
-  pre:
-    - pod install
-    - bundle install
- 
+  cache_directories:
+    - "/Users/distiller/.cocoapods/"
+
+test:
+  override:
+    - echo 'no test'
+
 deployment:
   develop:
     branch: master
