@@ -1,7 +1,9 @@
- machine:
-  timezone: Asia/Tokyo
+machine:
   xcode:
     version: 8.3.3
+  environment:
+    XCODE_SCHEME: TastingNote-Coffee
+    XCODE_WORKSPACE: ./TastingNote-Coffee.xcworkspace
 
 dependencies:
   cache_directories:
