@@ -18,6 +18,9 @@ default_platform :ios
 
 platform :ios do
   before_all do
+    ENV["CRASHLYTICS_API_TOKEN"] = "6cb0cc9d48b1339629f655b453be597013aa0899"
+    ENV["CRASHLYTICS_BUILD_SECRET"] = "90385b5b011ee156cdf8ab4852a4a84b86a811f5d4c91dc09b8b00b745607a07"
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
     # ビルド番号更新
     set_info_plist_value(
       path: "./TastingNote-Coffee/Info.plist",
@@ -35,7 +38,7 @@ platform :ios do
     # ビルド
     gym(
       scheme: "TastingNote-Coffee",
-      codesigning_identity: "iPhone Developer: MARUYAMA JUNICHI (GX2WLT8NK9)",
+      configuration: "Debug",
       export_method: "development"
     )
     # Betaに送信
@@ -54,6 +57,7 @@ platform :ios do
     # ビルド
     gym(
       scheme: "TastingNote-Coffee",
+      configuration: "Release",
       export_method: "app-store"
     )
     # TestFlightに送信
