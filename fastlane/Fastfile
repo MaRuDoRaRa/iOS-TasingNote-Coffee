@@ -18,6 +18,8 @@ default_platform :ios
 
 platform :ios do
   before_all do
+    # ITC team ID
+    ENV["ITC_TEAM_ID"] = "117715883"
   	# info piist path
   	ENV["INFO_PLIST_PATH"] = "./TastingNote-Coffee/Info.plist" 
   	# scheme
@@ -93,7 +95,9 @@ platform :ios do
       export_method: "app-store"
     )
     # deploy
-    pilot
+    pilot(
+      team_id: ENV["ITC_TEAM_ID"]
+    )
   end
 
   after_all do |lane|
