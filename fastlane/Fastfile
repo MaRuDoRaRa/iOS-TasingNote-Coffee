@@ -25,7 +25,7 @@ platform :ios do
     set_info_plist_value(
       path: "./TastingNote-Coffee/Info.plist",
       key: "CFBundleVersion",
-      value: ENV["CIRCLE_BUILD_NUM"]
+      value: ENV["BITRISE_BUILD_NUMBER"]
     )
   end
 

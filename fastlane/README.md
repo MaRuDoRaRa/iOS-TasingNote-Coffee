@@ -30,11 +30,6 @@ xcode-select --install
 
 # Available Actions
 ## iOS
-### ios test
-```
-fastlane ios test
-```
-テスト実行
 ### ios beta
 ```
 fastlane ios beta
