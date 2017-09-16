@@ -18,62 +18,100 @@ default_platform :ios
 
 platform :ios do
   before_all do
+  	# info piist path
+  	ENV["INFO_PLIST_PATH"] = "./TastingNote-Coffee/Info.plist" 
+  	# scheme
+  	ENV["SCHEME"] = "TastingNote-Coffee"
+    # certificates git branch  	
+  	ENV["DEV_CERTIFICATES_GIT_BRANCH"] = "tasting-note.coffee.wildcard"
+  	ENV["CERTIFICATES_GIT_BRANCH"] = "tasting-note.coffee"
+    # bundle identifier
+    ENV["DEV_BUNDLE_IDENTIFIER"] = "jp.junic.tasting-note.coffee.*"
+    ENV["BUNDLE_IDENTIFIER"] = "jp.junic.tasting-note.coffee"
+    # crashlytics
     ENV["CRASHLYTICS_API_TOKEN"] = "6cb0cc9d48b1339629f655b453be597013aa0899"
     ENV["CRASHLYTICS_BUILD_SECRET"] = "90385b5b011ee156cdf8ab4852a4a84b86a811f5d4c91dc09b8b00b745607a07"
+    # slack
     ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
-    # ビルド番号更新
+  end
+
+  desc “install development certificates to local device"
+  lane :certificates do
+    # install certificates
+    match(
+      type: "development", 
+      git_branch: ENV["DEV_CERTIFICATES_GIT_BRANCH"],
+      app_identifier: ENV["DEV_BUNDLE_IDENTIFIER"],
+      readonly: true)
+  end
+
+  desc “deploy debug build to fabric/crashlytics"
+  lane :beta do
+  	# update bundle version
     set_info_plist_value(
-      path: "./TastingNote-Coffee/Info.plist",
+      path: ENV["INFO_PLIST_PATH"],
       key: "CFBundleVersion",
       value: ENV["BITRISE_BUILD_NUMBER"]
     )
-  end
-
-  desc “FabricCrashlyticsにデプロイ"
-  lane :beta do
-    # 証明書取得
+    # install certificates
     match(
-      type: "development"
+      type: "development",
+      git_branch: ENV["DEV_CERTIFICATES_GIT_BRANCH"],
+      app_identifier: "jp.junic.tasting-note.coffee.*"
     )
-    # ビルド
+    # build
     gym(
-      scheme: "TastingNote-Coffee",
+      scheme: ENV["SCHEME"],
       configuration: "Debug",
       export_method: "development"
     )
-    # Betaに送信
+    # deploy
     crashlytics(
       notes: "Distributed with fastlane", 
       notifications: true
     )
   end
 
-  desc “ベータ版をTestFlightにデプロイ"
+  desc “deploy release build to testflight"
   lane :release do
-    # 証明書取得
-    match(
-    　　type: "appstore"
+    # update bundle version
+    set_info_plist_value(
+      path: ENV["INFO_PLIST_PATH"],
+      key: "CFBundleVersion",
+      value: ENV["BITRISE_BUILD_NUMBER"]
     )
-    # ビルド
+    # install certificates
+    match(
+      type: "appstore",
+      git_branch: ENV["CERTIFICATES_GIT_BRANCH"],
+      app_identifier: ENV["BUNDLE_IDENTIFIER"]
+    )
+    # build
     gym(
-      scheme: "TastingNote-Coffee",
+      scheme: ENV["SCHEME"],
       configuration: "Release",
       export_method: "app-store"
     )
-    # TestFlightに送信
+    # deploy
     pilot
   end
 
   after_all do |lane|
-    slack(
-      message: "Successfully deployed new App Update."
-    )
+  	case lane
+  	when "beta", "release"
+      slack(
+        message: "Successfully deployed new App Update."
+      )
+  	end
   end
 
   error do |lane, exception|
-    slack(
-      message: exception.message,
-      success: false
-    )
+  	case lane
+  	when "beta", "release"
+      slack(
+        message: exception.message,
+        success: false
+      )
+  	end
   end
 end

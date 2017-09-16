@@ -30,16 +30,21 @@ xcode-select --install
 
 # Available Actions
 ## iOS
+### ios certificates
+```
+fastlane ios certificates
+```
+install development certificates to local device
 ### ios beta
 ```
 fastlane ios beta
 ```
-FabricCrashlyticsにデプロイ
+deploy debug build to fabric/crashlytics
 ### ios release
 ```
 fastlane ios release
 ```
-ベータ版をTestFlightにデプロイ
+deploy release build to testflight
 
 ----
 

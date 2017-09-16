@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		4F359D9A297CC0D935501323 /* Pods-TastingNote-CoffeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TastingNote-CoffeeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TastingNote-CoffeeTests/Pods-TastingNote-CoffeeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		60DC1C3B1F697ADA008E54AA /* TastingNote-Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TastingNote-Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DC1C3B1F697ADA008E54AA /* Dev TastingNote-Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev TastingNote-Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DC1C3E1F697ADA008E54AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60DC1C451F697ADA008E54AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60DC1C481F697ADA008E54AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		60DC1C3C1F697ADA008E54AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60DC1C3B1F697ADA008E54AA /* TastingNote-Coffee.app */,
+				60DC1C3B1F697ADA008E54AA /* Dev TastingNote-Coffee.app */,
 				60DC1C4F1F697ADB008E54AA /* TastingNote-CoffeeTests.xctest */,
 				60DC1C5A1F697ADB008E54AA /* TastingNote-CoffeeUITests.xctest */,
 			);
@@ -258,7 +258,7 @@
 			);
 			name = "TastingNote-Coffee";
 			productName = "TastingNote-Coffee";
-			productReference = 60DC1C3B1F697ADA008E54AA /* TastingNote-Coffee.app */;
+			productReference = 60DC1C3B1F697ADA008E54AA /* Dev TastingNote-Coffee.app */;
 			productType = "com.apple.product-type.application";
 		};
 		60DC1C4E1F697ADB008E54AA /* TastingNote-CoffeeTests */ = {
@@ -316,6 +316,7 @@
 					60DC1C3A1F697ADA008E54AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6K4ZBWEM7M;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 					60DC1C4E1F697ADB008E54AA = {
@@ -712,10 +713,11 @@
 				);
 				INFOPLIST_FILE = "TastingNote-Coffee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.junic.tasting-note.coffee";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "04809976-c96a-4b88-a5e6-17726c11d5f7";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development jp.junic.tasting-note.coffee";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.junic.tasting-note.coffee.dev";
+				PRODUCT_NAME = "Dev $(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e751629b-7aeb-423c-a87a-019e0a8b071c";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development jp.junic.tasting-note.coffee.*";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -738,6 +740,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3a76ffbd-bfcf-451e-a5c6-46f7e328808a";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore jp.junic.tasting-note.coffee";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
