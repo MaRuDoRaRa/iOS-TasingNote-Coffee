@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ygT-pq-wnB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ygT-pq-wnB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Count Up View Controller-->
         <scene sceneID="PGY-jl-hMh">
             <objects>
-                <viewController id="ygT-pq-wnB" customClass="CountUpViewController" customModule="TastingNote_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ygT-pq-wnB" customClass="CountUpViewController" customModule="Dev_TastingNote_Coffee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ybp-K4-oEy"/>
                         <viewControllerLayoutGuide type="bottom" id="BPn-3x-4Ac"/>
@@ -28,12 +28,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omb-HO-a52">
-                                <rect key="frame" x="156" y="318" width="62" height="30"/>
-                                <state key="normal" title="CountUp"/>
+                                <rect key="frame" x="154" y="318" width="66" height="30"/>
+                                <state key="normal" title="Count Up"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpp-On-iOt">
-                                <rect key="frame" x="147" y="392" width="81" height="30"/>
-                                <state key="normal" title="CountDown"/>
+                                <rect key="frame" x="145" y="392" width="85" height="30"/>
+                                <state key="normal" title="Count Down"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxZ-re-vVk">
                                 <rect key="frame" x="168" y="466" width="39" height="30"/>
